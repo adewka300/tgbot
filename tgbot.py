@@ -16,7 +16,7 @@ def getInfoSubj(sbj, day, num, date):
         if (sbj.get(day).get(num)[i].get('dt') >= date) and (sbj.get(day).get(num)[i].get('df') <= date):
             sublst['obj'] = sbj.get(day).get(num)[i].get('sbj') + " ("+sbj.get(day).get(num)[i].get('type')+")"
             sublst['teacher'] = sbj.get(day).get(num)[i].get('teacher')
-            sublst['room'] = ', '.join(sbj.get(day).get(num)[i].get('shortRooms') )
+            sublst['room'] = ', '.join(sbj.get(day).get(num)[i].get('shortRooms') 
     return sublst
 
 def get_schedule(group, day):
